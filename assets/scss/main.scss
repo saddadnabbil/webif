@@ -1,0 +1,240 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+// Variables
+$primaryColor: #F6B459; 
+$secondaryColor: #3F3D56;
+$tertiaryColor: #FD6584;
+$textColor: #ffffff;
+
+// Style
+body {
+    font-family: 'Ubuntu', sans-serif;
+    // background-image: url(../img/bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 60vmax;
+    background-color: $textColor;
+
+    @media screen and (max-width: 922px) {
+        // background-image: url(../img/bg1.png);
+        // background-color: #E6E6E6;
+    }
+}
+
+// Navigation / Navbar
+.costume-nav {
+    .navbar-brand {
+            width: 25px;
+            height: 25px;
+            color: $primaryColor;
+            margin-left: -0.4em;
+            margin-bottom: 5px;
+            margin-top: -38px;
+            font-weight: 900;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 5px rgba($secondaryColor, 0.4);
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            font-family: 'Poppins', sans-serif;
+            @media (max-width:767px) {
+                .navbar-nav .open .dropdown-menu {
+                  background-color:#0000;
+                }
+              }
+            
+            .nav-item {
+                margin-right: 1.2em;
+                .nav-link {
+                    color: $primaryColor;
+                    font-weight: 400;
+                    margin-left: 2.4em;
+                    transition: 0.3 color ease;
+
+                    &:hover {
+                        color: darken($secondaryColor, 30%);
+                    }
+                }
+
+                .sign-up-button {
+                    &:hover {
+                        color: $textColor;
+                        background-color: $secondaryColor;
+                    }
+                    background-color: $primaryColor;
+                    color: $textColor;
+                    font-weight: 400;
+                    border-radius: 2em;
+                    border: 0;
+                    padding-left: 1em;
+                    padding-right: 1em;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        margin-top: -1em;
+        .navbar-brand {
+            text-shadow: 1px 1px 5px rgba($secondaryColor, 0.4);
+        }
+        .navbar-item {
+            background-color: $textColor;
+            color: $primaryColor;
+            font-weight: 400;
+            border-radius: 2em;
+            border: 0;
+            padding-left: 1em;
+            padding-right: 1em;
+            
+        }
+        
+    }
+}
+
+.container {
+    img {
+
+        margin-top: 5em;
+        margin-right: 10em;
+    }    
+}
+
+// Costume Section
+.costume-section {
+    margin-top: 8.5em;
+        h2 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 3rem;
+            color: $primaryColor;
+            line-height: 1;
+        }
+
+        h5 {
+            font-family: 'Poppins', sans-serif;
+            color: $secondaryColor;
+            line-height: 1;
+            font-weight: 600;
+            // margin-top: 0.5em;
+            // margin-left: 0.10em;
+        }
+
+        p {
+            margin-left: 0.10em;
+            color: $secondaryColor;
+            font-size: 1rem;
+            margin-top: 1.5em;
+        }
+
+        .sign-up-button {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 1.5em;
+            transition: 0.5 color ease;
+            &:hover {
+                color: $primaryColor;
+                background-color: $secondaryColor;
+            }
+            display: inline-block;
+            background-color: $primaryColor;
+            color: $textColor;
+            font-weight: 400;
+            border-radius: 2em;
+            border: 0;
+            padding: 0.5em 2em;
+            padding-left: 2em;
+            padding-right: 2em;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .margin {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 1.5em;
+            transition: 0.5s color ease;
+            &:hover {
+                color: lighten($secondaryColor, 30%)
+            }
+            margin-left: 1.5em;
+            text-decoration: none;
+            color: $primaryColor;
+            font-weight: 400;
+        }
+
+        .desk {
+            p {
+                // margin-left: 0.10em;
+                color: $secondaryColor;
+                font-size: 1rem;
+                margin-top: 0.5em;
+                margin-bottom: 5em;
+            }
+        }
+
+    @media screen and (max-width: 992px) {
+        margin-top: 5em;
+        // text-align: center;
+        h2 {
+            // color: #3F3D56;
+            text-shadow: 1px 1px 5px rgba($secondaryColor, 0.5);
+            // color: $secondaryColor;
+            // border-radius: 2em;
+            // border-color: $textColor;
+            // text-shadow: 1px 1px 3px rgba($textColor, 2);
+        }
+        h5 {
+            text-shadow: 1px 1px 5px rgba($textColor, 0.5);
+
+            // border-radius: 2em;
+            // border-color: $textColor;
+            // text-shadow: 1px 1px 3px rgba($textColor, 2);
+        }
+        p{
+            text-shadow: 1px 1px 5px rgba($textColor, 0.5);
+        }
+    }
+}
+
+
+
+// Coming Soon
+#comingsoon {
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        margin-top: 10em;
+        // margin-left: 5em;
+        line-height: 1;
+        color: $primaryColor;
+    }
+
+    h5 {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1;
+        font-weight: 600;
+        // margin-left: 7.5em;
+    } 
+
+    a {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1;
+        font-weight: 400;
+        // margin-left: 11.5em;
+        // text-decoration: none;
+        color: $secondaryColor;
+    }
+    
+}    
+
+// mahasiswa / daftar mahasiswa / badge
+
+.badge {
+    margin-left: 4px;
+} 
+

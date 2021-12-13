@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+  background-color: #ffffff;
+}
+
+.costume-nav .navbar-brand {
+  width: 25px;
+  height: 25px;
+  color: #F6B459;
+  margin-left: -0.4em;
+  margin-bottom: 5px;
+  margin-top: -38px;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 5px rgba(63, 61, 86, 0.4);
+}
+
+.costume-nav .navbar-brand span {
+  font-size: 1rem;
+}
+
+.costume-nav #navbarNav .navbar-nav {
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .costume-nav #navbarNav .navbar-nav .navbar-nav .open .dropdown-menu {
+    background-color: #0000;
+  }
+}
+
+.costume-nav #navbarNav .navbar-nav .nav-item {
+  margin-right: 1.2em;
+}
+
+.costume-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #F6B459;
+  font-weight: 400;
+  margin-left: 2.4em;
+  -webkit-transition: 0.3 color ease;
+  transition: 0.3 color ease;
+}
+
+.costume-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: black;
+}
+
+.costume-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+  background-color: #F6B459;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 2em;
+  border: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.costume-nav #navbarNav .navbar-nav .nav-item .sign-up-button:hover {
+  color: #ffffff;
+  background-color: #3F3D56;
+}
+
+@media screen and (max-width: 992px) {
+  .costume-nav {
+    margin-top: -1em;
+  }
+  .costume-nav .navbar-brand {
+    text-shadow: 1px 1px 5px rgba(63, 61, 86, 0.4);
+  }
+  .costume-nav .navbar-item {
+    background-color: #ffffff;
+    color: #F6B459;
+    font-weight: 400;
+    border-radius: 2em;
+    border: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.container img {
+  margin-top: 5em;
+  margin-right: 10em;
+}
+
+.costume-section {
+  margin-top: 8.5em;
+}
+
+.costume-section h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #F6B459;
+  line-height: 1;
+}
+
+.costume-section h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #3F3D56;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.costume-section p {
+  margin-left: 0.10em;
+  color: #3F3D56;
+  font-size: 1rem;
+  margin-top: 1.5em;
+}
+
+.costume-section .sign-up-button {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1.5em;
+  -webkit-transition: 0.5 color ease;
+  transition: 0.5 color ease;
+  display: inline-block;
+  background-color: #F6B459;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 2em;
+  border: 0;
+  padding: 0.5em 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.costume-section .sign-up-button:hover {
+  color: #F6B459;
+  background-color: #3F3D56;
+}
+
+.costume-section .margin {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1.5em;
+  -webkit-transition: 0.5s color ease;
+  transition: 0.5s color ease;
+  margin-left: 1.5em;
+  text-decoration: none;
+  color: #F6B459;
+  font-weight: 400;
+}
+
+.costume-section .margin:hover {
+  color: #8784a8;
+}
+
+.costume-section .desk p {
+  color: #3F3D56;
+  font-size: 1rem;
+  margin-top: 0.5em;
+  margin-bottom: 5em;
+}
+
+@media screen and (max-width: 992px) {
+  .costume-section {
+    margin-top: 5em;
+  }
+  .costume-section h2 {
+    text-shadow: 1px 1px 5px rgba(63, 61, 86, 0.5);
+  }
+  .costume-section h5 {
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+  }
+  .costume-section p {
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+#comingsoon h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-top: 10em;
+  line-height: 1;
+  color: #F6B459;
+}
+
+#comingsoon h5 {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+  font-weight: 600;
+}
+
+#comingsoon a {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #3F3D56;
+}
+
+.badge {
+  margin-left: 4px;
+}
